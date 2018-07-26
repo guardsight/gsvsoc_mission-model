@@ -48,7 +48,7 @@ master_doc = 'index'
 
 # General information about the project.
 project = u'gsvsoc_mission-model'
-copyright = u'2018, John McGloughlin'
+copyright = u'2018, GuardSight, Inc.'
 author = u'John McGloughlin'
 
 # The version info for the project you're documenting, acts as replacement for
