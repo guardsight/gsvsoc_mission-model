@@ -1,4 +1,4 @@
-Welcome to gsvsoc_mission-model's documentation!
+GSVSOC Mission Model
 ================================================
 
 Contents:
