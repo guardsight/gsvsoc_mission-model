@@ -7,6 +7,12 @@ Contents:
    :maxdepth: 2
 
    license
+   timelines.rst
+   roc.rst
+   ioc.rst
+   ckc.rst
+   coa.rst
+   ofi.rst
 
 
 
