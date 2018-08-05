@@ -1,25 +1,23 @@
-GSVSOC Mission Model
-================================================
+MISSION-YYYYMMDD-n
+******************************
 
-Contents:
+This document is an after-action report that provides the details of an Information Security Incident signifying a violation of computer security policies, acceptable use policies, or standard security practices resulting in a compromise of this organization's assets.
+
+.. include:: meta.txt
+
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 3
 
+   summary
+   roc
+   timelines  
+   assets
+   ioc
+   ckc
+   coa
+   ofi
+   notes
+   references
+   contributors
    license
-   timelines.rst
-   roc.rst
-   ioc.rst
-   ckc.rst
-   coa.rst
-   ofi.rst
-
-
-
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
-
