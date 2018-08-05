@@ -1,0 +1,26 @@
+
++---------------------------+---------------------------+
+| |logo|                  **Incident Response Mission** |
++---------------------------+---------------------------+
+| Mission Id:               | MISSION-YYYMMDD-n         |
++---------------------------+---------------------------+
+| Revision Id:              | |release|                 |
++---------------------------+---------------------------+
+| Date:                     | Mon Day, YYYY             |
++---------------------------+---------------------------+
+| Rating:                   | SEVERE (`NCCIC CISS`_)    |
++---------------------------+---------------------------+
+| COA Completion:           | 0/0 - 0%                  |
++---------------------------+---------------------------+
+| Condition:                | GUARDED (HSAS_)           |
++---------------------------+---------------------------+
+| CONFIENTIAL//ATTORNEY-CLIENT PRIVILEGE//TLP:AMBER     |
++---------------------------+---------------------------+
+
+
+.. |logo| image:: gs-logo.png
+   	  	  :scale: 70
+
+.. _NCCIC CISS: https://www.us-cert.gov/NCCIC-Cyber-Incident-Scoring-System
+
+.. _HSAS: https://en.wikipedia.org/wiki/Homeland_Security_Advisory_System
