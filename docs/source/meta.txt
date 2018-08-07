@@ -14,7 +14,7 @@
 +---------------------------+---------------------------+
 | Condition:                | GUARDED (HSAS_)           |
 +---------------------------+---------------------------+
-| CONFIENTIAL//ATTORNEY-CLIENT PRIVILEGE//TLP:AMBER     |
+| CONFIDENTIAL//ATTORNEY-CLIENT PRIVILEGE//TLP:AMBER    |
 +---------------------------+---------------------------+
 
 
