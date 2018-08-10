@@ -13,7 +13,7 @@ GuardSight analysts use a Mission Model as a systematic approach for the objecti
 1. Familiarity with contributing to Github
 1. Authorized access to Github
 1. Familiarity with publishing documentation using Sphinx
-1. Local builds require Sphinx software
+1. Sphinx software for Local builds (optional but recommended)
    ```bash
    $ pip install sphinx sphinx-autobuild
 1.  Authorized access to Read the Docs for business **private** hosting
