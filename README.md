@@ -54,6 +54,7 @@ GuardSight analysts use a Mission Model as a systematic approach for the objecti
    $ git checkout develop
    $ git pull origin develop
    $ cd docs
+1. Replace some default content
    $ sed -i "s/MISSION-YYYYMMDD-1/${MISSION}/g" source/index.rst source/meta.txt
    ... Change the copyrights to ${MYORG}
    ... Replace docs/source/meta-logo.png with ${MYORG} logo
