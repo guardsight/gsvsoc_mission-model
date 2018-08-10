@@ -17,13 +17,13 @@ GuardSight analysts use a Mission Model as a systematic approach for the objecti
 1. Familiarity with publishing documentation using Sphinx
 1. Sphinx software for Local builds (optional but recommended)
    ```bash
-   $ pip install sphinx sphinx-autobuild
+   pip install sphinx sphinx-autobuild
 1.  Authorized access to Read the Docs for business **private** hosting
 
 	* Non-redacted public postings of after action reports is probably **not smart** - readthedocs.com is **private** - readthedocs.io is **public**
 1. Github Settings
    ```bash
-   $ vi ~/.gitconfig
+   vi ~/.gitconfig
    [user]
 	   name = myName
 	   email = myName@myEmailDomain
@@ -36,27 +36,27 @@ GuardSight analysts use a Mission Model as a systematic approach for the objecti
 
 1. Create a new repo that will  contain the after action report (**notice the private key has its boolean value set to true**)
    ```bash
-   $ cd ~/sandbox/code/github
-   $ MISSION=$(date +'MISSION-%Y%m%d-1')
-   $ MYORG=myOrganization
-   $ curl -u $(grep name ~/.gitconfig | awk '{print $NF}') -d '{ "name": "'${MISSION}'", "description": "Incident Response After Action Report", "private": true, "has_wiki": false }' https://api.github.com/orgs/${MYORG}/repos
+   cd ~/sandbox/code/github
+   MISSION=$(date +'MISSION-%Y%m%d-1')
+   MYORG=myOrganization
+   curl -u $(grep name ~/.gitconfig | awk '{print $NF}') -d '{ "name": "'${MISSION}'", "description": "Incident Response After Action Report", "private": true, "has_wiki": false }' https://api.github.com/orgs/${MYORG}/repos
    Enter host password for user 'myName':
 1. Duplicate a template repo without forking it and mirror-push its contents into the new repo
    ```bash
-   $ git clone --bare git@github.com:guardsight/gsvsoc_mission-model MISSION-BOOTSTRAP
-   $ cd MISSION-BOOTSTRAP/
-   $ git push --mirror git@github.com:guardsight/${MISSION}
-   $ cd .. && rm -rf MISSION-BOOTSTRAP
+   git clone --bare git@github.com:guardsight/gsvsoc_mission-model MISSION-BOOTSTRAP
+   cd MISSION-BOOTSTRAP/
+   git push --mirror git@github.com:guardsight/${MISSION}
+   cd .. && rm -rf MISSION-BOOTSTRAP
 1. Create a development branch and incorporate the remote repo into the local branch
    ```bash
-   $ git clone git@github.com:guardsight/${MISSION} ${MISSION}
-   $ cd ~/sandbox/code/github/${MISSION}
-   $ git checkout develop
-   $ git pull origin develop
-   $ cd docs
+   git clone git@github.com:guardsight/${MISSION} ${MISSION}
+   cd ~/sandbox/code/github/${MISSION}
+   git checkout develop
+   git pull origin develop
+   cd docs
 1. Replace some default content
    ```bash
-   $ sed -i "s/MISSION-YYYYMMDD-1/${MISSION}/g" source/index.rst source/meta.txt
+   sed -i "s/MISSION-YYYYMMDD-1/${MISSION}/g" source/index.rst source/meta.txt
    ... Replace the GuardSight copyright to ${MYORG}
    ... Replace docs/source/meta-logo.png with ${MYORG} logo
    
@@ -66,39 +66,39 @@ IT **IS PERMISSABLE** TO REPLACE THE LOGO AND COPYRIGHT NOTICE IN THE CLONED ${M
 
 1. Develop -> Commit -> Push
    ```bash
-   $ cd ~/sandbox/code/github/${MISSION}
-   $ git checkout develop; git pull origin develop
-   $ emacs -nw source/index.rst
+   cd ~/sandbox/code/github/${MISSION}
+   git checkout develop; git pull origin develop
+   emacs -nw source/index.rst
    ...meta.txt...
    ...summary.rst...
-   $ git commit -a -m "Mission update"
-   $ git push --tags origin develop
+   git commit -a -m "Mission update"
+   git push --tags origin develop
 1. Merge Into Master -> Push
    ```bash
-   $ git checkout master
-   $ git merge develop
-   $ git push --tags origin master
-   $ git checkout develop
+   git checkout master
+   git merge develop
+   git push --tags origin master
+   git checkout develop
    
    
 ##### Local Build
 
 1. Make up the build
-	```bash
-	$ cd ~/sandbox/code/github/${MISSION}/docs
-	$ make html
-	$ google-chrome build/html/index.html
+   ```bash
+   cd ~/sandbox/code/github/${MISSION}/docs
+   make html
+   google-chrome build/html/index.html
 	
 	
 ##### Read the Docs For Business Build
 
 1. Import the repo into RTD
 	```bash
-	$ google-chrome https://readthedocs.com/dashboard/import/?
+	google-chrome https://readthedocs.com/dashboard/import/?
 	
 	... Import the project
 	... Email received from Github: [GitHub] A new public key was added to ${MYORG}/${MISSION}
 	
-	$ google-chrome https://${MYORG}-$(echo ${MISSION} | tr [[:upper:]] [[:lower:]]).readthedocs-hosted.com/en/latest/
+	google-chrome https://${MYORG}-$(echo ${MISSION} | tr [[:upper:]] [[:lower:]]).readthedocs-hosted.com/en/latest/
 	
 
