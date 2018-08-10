@@ -54,4 +54,20 @@ GuardSight analysts use a Mission Model as a systematic approach for the objecti
    
    
 ##### Edit <=> Commit
+
+1. Develop -> Commit -> Push
+   ```bash
+   $ cd ~/sandbox/code/gs-github/${MISSION}
+   $ git checkout develop; git pull origin develop
+   $ emacs -nw source/index.rst
+   ...meta.txt...
+   ...summary.rst...
+   $ git commit -a -m "Mission update"
+   $ git push --tags origin develop
+2. Merge Into Master -> Push
+   ```bash
+   $ git checkout master
+   $ git merge develop
+   $ git push --tags origin master
+   $ git checkout develop
    
