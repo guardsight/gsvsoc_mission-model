@@ -36,7 +36,7 @@ GuardSight analysts use a Mission Model as a systematic approach for the objecti
 
 1. Create a new repo that will  contain the after action report (**notice the private key has its boolean value set to true**)
    ```bash
-   $ cd ~/sandbox/code/gs-github
+   $ cd ~/sandbox/code/github
    $ MISSION=$(date +'MISSION-%Y%m%d-1')
    $ MYORG=myOrganization
    $ curl -u $(grep name ~/.gitconfig | awk '{print $NF}') -d '{ "name": "'${MISSION}'", "description": "Incident Response After Action Report", "private": true, "has_wiki": false }' https://api.github.com/orgs/${MYORG}/repos
@@ -50,7 +50,7 @@ GuardSight analysts use a Mission Model as a systematic approach for the objecti
 1. Create a development branch and incorporate the remote repo into the local branch
    ```bash
    $ git clone git@github.com:guardsight/${MISSION} ${MISSION}
-   $ cd ~/sandbox/code/gs-github/${MISSION}
+   $ cd ~/sandbox/code/github/${MISSION}
    $ git checkout develop
    $ git pull origin develop
    $ cd docs
@@ -61,7 +61,7 @@ GuardSight analysts use a Mission Model as a systematic approach for the objecti
 
 1. Develop -> Commit -> Push
    ```bash
-   $ cd ~/sandbox/code/gs-github/${MISSION}
+   $ cd ~/sandbox/code/github/${MISSION}
    $ git checkout develop; git pull origin develop
    $ emacs -nw source/index.rst
    ...meta.txt...
@@ -80,7 +80,7 @@ GuardSight analysts use a Mission Model as a systematic approach for the objecti
 
 1. Make up the build
 	```bash
-	$ cd ~/sandbox/code/gs-github/${MISSION}/docs
+	$ cd ~/sandbox/code/github/${MISSION}/docs
 	$ make html
 	$ google-chrome build/html/index.html
 	
