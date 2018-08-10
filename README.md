@@ -31,3 +31,16 @@ GuardSight analysts use a Mission Model as a systematic approach for the objecti
 ##### Bootstrap
 
 1. Create a new repo that will  contain the after action report (**notice the private key has its boolean value set to true**)
+   ```bash
+   $ cd ~/sandbox/code/gs-github
+   $ MISSION=$(date +'MISSION-%Y%m%d-1')
+   $ MYORG=myOrganization
+   $ curl -u $(grep name ~/.gitconfig | awk '{print $NF}') -d '{ "name": "'${MISSION}'", "description": "Incident Response After Action Report", "private": true, "has_wiki": false }' https://api.github.com/orgs/${MYORG}/repos
+1. Duplicate a template repo without forking it and mirror-push its contents into the new repo
+   ```bash
+   $ git clone --bare git@github.com:guardsight/gsvsoc_mission-model.private MISSION-BOOTSTRAP
+   $ cd MISSION-BOOTSTRAP/
+   $ git push --mirror git@github.com:guardsight/${MISSION}
+   $ cd .. && rm -rf MISSION-BOOTSTRAP
+   
+   
