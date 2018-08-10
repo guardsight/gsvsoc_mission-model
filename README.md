@@ -16,5 +16,5 @@ GuardSight analysts use a Mission Model as a systematic approach to containment,
 1. Local builds require Sphinx software
    ```bash
    $ pip install sphinx sphinx-autobuild
-1.  Authorized access to Read the Docs for business **private** hosting 
-	*Unintentional public postings after action reports is probably not smart* readthedocs**.com** is *private* / readthedocs**.io** is public
+1.  Authorized access to Read the Docs for business **private** hosting
+*Unintentional public postings after action reports is probably not smart* readthedocs**.com** is *private* / readthedocs**.io** is public
