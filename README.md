@@ -71,3 +71,23 @@ GuardSight analysts use a Mission Model as a systematic approach for the objecti
    $ git push --tags origin master
    $ git checkout develop
    
+   
+##### Local Build
+
+	```bash
+	$ cd ~/sandbox/code/gs-github/${MISSION}/docs
+	$ make html
+	$ google-chrome build/html/index.html
+	
+	
+##### Read the Docs For Business Build
+
+	```bash
+	$ google-chrome https://readthedocs.com/dashboard/import/?
+	
+	... Import the project
+	... Email received from Github: [GitHub] A new public key was added to ${MYORG}/${MISSION}
+	
+	$ google-chrome https://${MYORG}-$(echo ${MISSION} | tr [[:upper:]] [[:lower:]]).readthedocs-hosted.com/en/latest/
+	
+
