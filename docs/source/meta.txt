@@ -18,7 +18,7 @@
 +---------------------------+---------------------------+
 
 
-.. |logo| image:: gs-logo.png
+.. |logo| image:: meta-logo.png
    	  	  :scale: 70
 
 .. _NCCIC CISS: https://www.us-cert.gov/NCCIC-Cyber-Incident-Scoring-System
