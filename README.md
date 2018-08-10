@@ -57,7 +57,8 @@ GuardSight analysts use a Mission Model as a systematic approach for the objecti
 1. Replace some default content
    ```bash
    $ sed -i "s/MISSION-YYYYMMDD-1/${MISSION}/g" source/index.rst source/meta.txt
-   ... Change the copyrights to ${MYORG}
+   ... Replace the GuardSight copyright to ${MYORG}
+	   ... IT IS PERMISSABLE TO REPLACE THE COPYRIGHT NOTICE IN THE CLONED ${MISSION} AND THE GUARDSIGHT PERMISSION IS NOT REQUIRED TO BE INCLUDED IN THE ${MISSION} AFTER ACTION REPORT
    ... Replace docs/source/meta-logo.png with ${MYORG} logo
    
 ##### Edit <=> Commit
