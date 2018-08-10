@@ -19,3 +19,15 @@ GuardSight analysts use a Mission Model as a systematic approach for the objecti
 1.  Authorized access to Read the Docs for business **private** hosting
 
 	* Non-redacted public postings of after action reports is probably **not smart** - readthedocs.com is **private** - readthedocs.io is **public**
+1. Github Settings
+   ```bash
+   $ vi ~/.gitconfig
+   [user]
+	   name = myName
+	   email = myName@myEmailDomain
+
+#### Instruction
+
+##### Bootstrap
+
+1. Create a new repo that will  contain the after action report (**notice the private key has its boolean value set to true**)
