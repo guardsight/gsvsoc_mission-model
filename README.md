@@ -36,7 +36,7 @@ GuardSight analysts use a Mission Model as a systematic approach for the objecti
    $ MISSION=$(date +'MISSION-%Y%m%d-1')
    $ MYORG=myOrganization
    $ curl -u $(grep name ~/.gitconfig | awk '{print $NF}') -d '{ "name": "'${MISSION}'", "description": "Incident Response After Action Report", "private": true, "has_wiki": false }' https://api.github.com/orgs/${MYORG}/repos
-   Enter host password for user 'myName'
+   Enter host password for user 'myName':
 1. Duplicate a template repo without forking it and mirror-push its contents into the new repo
    ```bash
    $ git clone --bare git@github.com:guardsight/gsvsoc_mission-model.private MISSION-BOOTSTRAP
