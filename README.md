@@ -56,7 +56,7 @@ GuardSight analysts use a Mission Model as a systematic approach for the objecti
    $ cd docs
    $ sed -i "s/MISSION-YYYYMMDD-1/${MISSION}/g" source/index.rst source/meta.txt
    ... Change the copyrights to ${MYORG}
-   ... Change the docs/images/
+   ... Replace docs/source/meta-logo.png with ${MYORG} logo
    
 ##### Edit <=> Commit
 
