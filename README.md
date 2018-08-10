@@ -39,9 +39,19 @@ GuardSight analysts use a Mission Model as a systematic approach for the objecti
    Enter host password for user 'myName':
 1. Duplicate a template repo without forking it and mirror-push its contents into the new repo
    ```bash
-   $ git clone --bare git@github.com:guardsight/gsvsoc_mission-model.private MISSION-BOOTSTRAP
+   $ git clone --bare git@github.com:guardsight/gsvsoc_mission-model MISSION-BOOTSTRAP
    $ cd MISSION-BOOTSTRAP/
    $ git push --mirror git@github.com:guardsight/${MISSION}
    $ cd .. && rm -rf MISSION-BOOTSTRAP
+1. Create a development branch and incorporate the remote repo into the local branch
+   ```bash
+   $ git clone git@github.com:guardsight/${MISSION} ${MISSION}
+   $ cd ~/sandbox/code/gs-github/${MISSION}
+   $ git checkout develop
+   $ git pull origin develop
+   $ cd docs
+   $ sed -i "s/MISSION-YYYYMMDD-1/${MISSION}/g" source/index.rst source/meta.txt
    
+   
+##### Edit <=> Commit
    
