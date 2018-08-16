@@ -45,11 +45,11 @@ GuardSight analysts use a Mission Model as a systematic approach to achieve the 
    ```bash
    git clone --bare git@github.com:guardsight/gsvsoc_mission-model MISSION-BOOTSTRAP
    cd MISSION-BOOTSTRAP/
-   git push --mirror git@github.com:guardsight/${MISSION}
+   git push --mirror git@github.com:${MYORG}/${MISSION}
    cd .. && rm -rf MISSION-BOOTSTRAP
 1. Create a development branch and incorporate the remote repo into the local branch
    ```bash
-   git clone git@github.com:guardsight/${MISSION} ${MISSION}
+   git clone git@github.com:${MYORG}/${MISSION} ${MISSION}
    cd ${MISSION}
    git checkout develop
    git pull origin develop
