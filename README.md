@@ -78,7 +78,6 @@ IT **IS PERMISSABLE** TO REPLACE THE LOGO AND COPYRIGHT NOTICE IN THE CLONED ${M
    git push --tags origin master
    git checkout develop
    
-   
 ##### Local Build
 
 1. Make up the build
@@ -90,7 +89,6 @@ IT **IS PERMISSABLE** TO REPLACE THE LOGO AND COPYRIGHT NOTICE IN THE CLONED ${M
    ```bash
    google-chrome build/html/index.html
 	
-	
 ##### Read the Docs For Business Build
 
 1. Import the repo into RTD
@@ -101,4 +99,3 @@ IT **IS PERMISSABLE** TO REPLACE THE LOGO AND COPYRIGHT NOTICE IN THE CLONED ${M
    ```bash
    google-chrome https://${MYORG}-$(echo ${MISSION} | tr [[:upper:]] [[:lower:]]).readthedocs-hosted.com/en/latest/
 	
-
