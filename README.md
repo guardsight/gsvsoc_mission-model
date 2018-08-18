@@ -85,6 +85,9 @@ IT **IS PERMISSABLE** TO REPLACE THE LOGO AND COPYRIGHT NOTICE IN THE CLONED ${M
    ```bash
    cd ${MISSION}/docs
    make html
+
+1. View the document
+   ```bash
    google-chrome build/html/index.html
 	
 	
@@ -94,9 +97,8 @@ IT **IS PERMISSABLE** TO REPLACE THE LOGO AND COPYRIGHT NOTICE IN THE CLONED ${M
 	```bash
 	google-chrome https://readthedocs.com/dashboard/import/?
 	
-	... Import the project
-	... Email received from Github: [GitHub] A new public key was added to ${MYORG}/${MISSION}
-	
-	google-chrome https://${MYORG}-$(echo ${MISSION} | tr [[:upper:]] [[:lower:]]).readthedocs-hosted.com/en/latest/
+1. View the document
+   ```bash
+   google-chrome https://${MYORG}-$(echo ${MISSION} | tr [[:upper:]] [[:lower:]]).readthedocs-hosted.com/en/latest/
 	
 
