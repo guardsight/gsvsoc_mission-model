@@ -71,7 +71,7 @@ IT **IS PERMISSABLE** TO REPLACE THE LOGO AND COPYRIGHT NOTICE IN THE CLONED ${M
    emacs -nw source/*.rst source/meta.txt
    git commit -a -m "Mission update"
    git push --tags origin develop
-1. Merge Into Master -> Push
+1. Merge into Master -> Push
    ```bash
    git checkout master
    git merge develop
