@@ -57,8 +57,8 @@ GuardSight analysts use a Mission Model as a systematic approach to achieve the 
 1. Replace some default content
    ```bash
    sed -i "s/MISSION-YYYYMMDD-n/${MISSION}/g" source/index.rst source/meta.txt
-   ... Replace the GuardSight copyright to ${MYORG}
-   ... Replace docs/source/meta-logo.png with ${MYORG} logo
+1. Replace the GuardSight copyright to ${MYORG}
+1. Replace docs/source/meta-logo.png with ${MYORG} logo 
    
 IT **IS PERMISSABLE** TO REPLACE THE LOGO AND COPYRIGHT NOTICE IN THE CLONED ${MISSION} AND THE GUARDSIGHT PERMISSION NOTICE **IS NOT REQUIRED** TO BE INCLUDED IN THE CLONED ${MISSION} OR ANY PORTION OF THE AFTER ACTION REPORT
    
@@ -68,9 +68,7 @@ IT **IS PERMISSABLE** TO REPLACE THE LOGO AND COPYRIGHT NOTICE IN THE CLONED ${M
    ```bash
    cd ${MISSION}
    git checkout develop; git pull origin develop
-   emacs -nw source/index.rst
-   ...meta.txt...
-   ...summary.rst...
+   emacs -nw source/*.rst source/meta.txt
    git commit -a -m "Mission update"
    git push --tags origin develop
 1. Merge Into Master -> Push
