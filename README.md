@@ -83,7 +83,8 @@ IT **IS PERMISSABLE** TO REPLACE THE LOGO AND COPYRIGHT NOTICE IN THE CLONED ${M
 1. Make up the build
    ```bash
    cd ${MISSION}/docs
-   make html
+   make singlehtml
+   make latexpdf
 
 1. View the document
    ```bash
