@@ -229,8 +229,8 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-    (master_doc, 'gsvsoc_mission-model.tex', u'gsvsoc\\_mission-model Documentation',
-     u'John McGloughlin', 'manual'),
+    (master_doc, 'gsvsoc_mission-model.tex', u'MISSION-YYYYMMDD-n After Action Report',
+     u'GuardSight, Inc.', 'manual'),
 ]
 
 # The name of an image file (relative to this directory) to place at the top of
@@ -259,7 +259,7 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    (master_doc, 'gsvsoc_mission-model', u'gsvsoc_mission-model Documentation',
+    (master_doc, 'gsvsoc_mission-model', u'MISSION-YYYYMMDD-n After Action Report',
      [author], 1)
 ]
 

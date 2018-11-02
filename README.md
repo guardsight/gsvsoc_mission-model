@@ -38,7 +38,7 @@ GuardSight analysts use a Mission Model as a systematic approach to achieve the 
    ```bash
    cd ~/sandbox/code/github
    MISSION=$(date +'MISSION-%Y%m%d-1')
-   MYORG=myOrganization
+   MYORG=myOrganization # e.g. https://github.com/guardsight <== 'guardsight'
    curl -u $(grep name ~/.gitconfig | awk '{print $NF}') -d '{ "name": "'${MISSION}'", "description": "Incident Response After Action Report", "private": true, "has_wiki": false }' https://api.github.com/orgs/${MYORG}/repos
    Enter host password for user 'myName':
 1. Duplicate a template repo without forking it and mirror-push its contents into the new repo
@@ -56,7 +56,7 @@ GuardSight analysts use a Mission Model as a systematic approach to achieve the 
    cd docs
 1. Replace some default content
    ```bash
-   sed -i "s/MISSION-YYYYMMDD-n/${MISSION}/g" source/index.rst source/meta.txt
+   sed -i "s/MISSION-YYYYMMDD-n/${MISSION}/g" source/index.rst source/meta.txt source/conf.py
 1. Replace the GuardSight copyright to ${MYORG}
 1. Replace docs/source/meta-logo.png with ${MYORG} logo 
    
