@@ -229,7 +229,7 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-    (master_doc, 'gsvsoc_mission-model.tex', u'MISSION-YYYYMMDD-n After Action Report',
+    (master_doc, 'gsvsoc_mission-model.tex', u'MISSION-YYYYMMDD-n Journal',
      u'GuardSight, Inc.', 'manual'),
 ]
 
@@ -259,7 +259,7 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    (master_doc, 'gsvsoc_mission-model', u'MISSION-YYYYMMDD-n After Action Report',
+    (master_doc, 'gsvsoc_mission-model', u'MISSION-YYYYMMDD-n Journal',
      [author], 1)
 ]
 
