@@ -90,7 +90,7 @@ IT **IS PERMISSABLE** TO REPLACE THE LOGO AND COPYRIGHT NOTICE IN THE CLONED ${M
 1. View the document
    ```bash
    google-chrome build/html/index.html
-	
+
 ##### Read the Docs For Business Build (optional)
 
 1. Import the repo into RTD
@@ -100,4 +100,4 @@ IT **IS PERMISSABLE** TO REPLACE THE LOGO AND COPYRIGHT NOTICE IN THE CLONED ${M
 1. View the document
    ```bash
    google-chrome https://${MYORG}-$(echo ${MISSION} | tr [[:upper:]] [[:lower:]]).readthedocs-hosted.com/en/latest/
-	
+
