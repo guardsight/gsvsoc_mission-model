@@ -1,5 +1,5 @@
-# How-To Develop An Incident Response Report Using GitHub-Sphinx-RTD
-### Documenting Incident Response Using GitHub-Sphinx-RTD
+# How-To Develop An Incident Response Report Using GitHub, Sphinx, RTD
+### Documenting Incident Response Using GitHub, Sphinx, RTD
 
 #### Prologue
 
