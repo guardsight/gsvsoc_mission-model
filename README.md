@@ -68,7 +68,7 @@ IT **IS PERMISSABLE** TO REPLACE THE LOGO AND COPYRIGHT NOTICE IN THE CLONED ${M
    ```bash
    cd ${MISSION}
    git checkout develop; git pull origin develop
-   gedit source/*.rst source/meta.txt # sudo apt install gedit-plugin-git; # to use git directly from gedit
+   gedit source/*.rst source/meta.txt # sudo apt install gedit-plugin-git; # this shows lines that have changed since last commit;
    # make some changes
    git commit -a -m "Mission update"
    git push --tags origin develop
