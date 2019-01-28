@@ -1,9 +1,9 @@
 # How-To Develop An Incident Response Report Using GitHub-Sphinx-RTD
-### Mission Model Using GitHub-Sphix-RTD
+### Documenting Incident Response Using GitHub-Sphix-RTD
 
 #### Prologue
 
-GuardSight analysts use a Mission Model as a systematic approach to achieve the objectives of containment, eradication, and recovery during its BreachMasters™ incident response. One component of this approach includes developing content in an iterative manner to describe the adversary compromise as well as the allied response. The aggregated content ultimately results in an after action report. Producing the report during the response has a number of benefits including memorializing in near real-time, accuracy of observations and collections, and exactness of knowledge transfers when transitioning between analysts in order to manage response fatigue. This document discusses a mechanism for developing the Mission Model content using the revision control hosting system [Github](https://www.github.com), use of the [Sphinx](http://www.sphinx-doc.org/en/master/) documentation generator, and use of the software hosting system [Read the Docs](https://readthedocs.com/).
+GuardSight analysts use a an iterative systematic approach to achieve the objectives of containment, eradication, and recovery during its BreachMasters™ incident response. One component of this approach includes developing content in an iterative manner to describe the adversary compromise as well as the allied response. The aggregated content ultimately results in an after action report. Producing the report during the response has a number of benefits including memorializing in near real-time, accuracy of observations and collections, and exactness of knowledge transfers when transitioning between analysts in order to manage response fatigue. This document discusses a mechanism for developing the incident response content using the revision control hosting system [Github](https://www.github.com), use of the [Sphinx](http://www.sphinx-doc.org/en/master/) documentation generator, and use of the software hosting system [Read the Docs](https://readthedocs.com/).
 
 ![img](images/gh.mm.2.png)
 
@@ -18,7 +18,7 @@ GuardSight analysts use a Mission Model as a systematic approach to achieve the 
 1. Sphinx software for Local builds (optional but recommended)
    ```bash
    pip install sphinx sphinx-autobuild
-1.  Authorized access to Read the Docs for business **private** hosting
+1.  Authorized access to Read the Docs for business **private** hosting (optional)
 
 	* Non-redacted public postings of after action reports is probably **not smart** - readthedocs.com is **private** - readthedocs.io is **public**
 1. Github Settings
@@ -91,7 +91,7 @@ IT **IS PERMISSABLE** TO REPLACE THE LOGO AND COPYRIGHT NOTICE IN THE CLONED ${M
    ```bash
    google-chrome build/html/index.html
 	
-##### Read the Docs For Business Build
+##### Read the Docs For Business Build (optional)
 
 1. Import the repo into RTD
 	```bash
