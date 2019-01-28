@@ -1,9 +1,9 @@
-# How-To Develop An Incident Response Report Using GitHub, Sphinx, RTD
+# How-To Develop An Incident Response Report Journal Using GitHub, Sphinx, RTD
 ### Documenting Incident Response Using GitHub, Sphinx, RTD
 
 #### Prologue
 
-GuardSight analysts use a systematic approach to achieve the objectives of containment, eradication, and recovery during its BreachMasters™ incident response. One component of this approach includes developing content in an iterative manner to describe the adversary compromise as well as the allied response. The aggregated content ultimately results in an after action report. Producing the report during the response has a number of benefits including memorializing in near real-time, accuracy of observations and collections, and exactness of knowledge transfers when transitioning between analysts in order to manage response fatigue. This document discusses a mechanism for developing the incident response content using the revision control hosting system [Github](https://www.github.com), use of the [Sphinx](http://www.sphinx-doc.org/en/master/) documentation generator, and the optional use of the software hosting system [Read the Docs](https://readthedocs.com/).
+GuardSight analysts use a systematic approach to achieve the objectives of containment, eradication, and recovery during its BreachMasters™ incident response. One component of this approach includes developing content in an iterative manner to describe the adversary compromise as well as the allied response. The aggregated journal content ultimately results in an after action report. Producing the report during the response has a number of benefits including memorializing in near real-time, accuracy of observations and collections, and exactness of knowledge transfers when transitioning between analysts in order to manage response fatigue. This document discusses a mechanism for developing the incident response content using the revision control hosting system [Github](https://www.github.com), use of the [Sphinx](http://www.sphinx-doc.org/en/master/) documentation generator, and the optional use of the software hosting system [Read the Docs](https://readthedocs.com/).
 
 ![img](images/gh.mm.2.png)
 
@@ -39,7 +39,7 @@ GuardSight analysts use a systematic approach to achieve the objectives of conta
    cd ~/sandbox/code/github
    MISSION=$(date +'MISSION-%Y%m%d-1')
    MYORG=guardsight # e.g. ==> https://github.com/${MYORG} <== assign MYORG=yourOrganization
-   curl -u $(grep name ~/.gitconfig | awk '{print $NF}') -d '{ "name": "'${MISSION}'", "description": "Incident Response After Action Report", "private": true, "has_wiki": false }' https://api.github.com/orgs/${MYORG}/repos
+   curl -u $(grep name ~/.gitconfig | awk '{print $NF}') -d '{ "name": "'${MISSION}'", "description": "Incident Response Journal", "private": true, "has_wiki": false }' https://api.github.com/orgs/${MYORG}/repos
    Enter host password for user 'myName':
 1. Duplicate a template repo without forking it and mirror-push its contents into the new repo
    ```bash
