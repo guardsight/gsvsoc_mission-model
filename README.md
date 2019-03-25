@@ -89,7 +89,7 @@ IT **IS PERMISSABLE** TO REPLACE THE LOGO AND COPYRIGHT NOTICE IN THE CLONED ${M
 
 1. View the document
    ```bash
-   google-chrome build/html/index.html
+   google-chrome build/singlehtml/index.html
 
 ##### Read the Docs For Business Build (optional)
 
