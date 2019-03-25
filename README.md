@@ -90,6 +90,7 @@ IT **IS PERMISSABLE** TO REPLACE THE LOGO AND COPYRIGHT NOTICE IN THE CLONED ${M
 1. View the document
    ```bash
    google-chrome build/singlehtml/index.html
+   google-chrome build/latex/gsvsoc_mission-model.pdf
 
 ##### Read the Docs For Business Build (optional)
 
